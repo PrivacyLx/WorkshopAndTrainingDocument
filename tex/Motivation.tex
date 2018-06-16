@@ -1,0 +1,38 @@
+Perhaps the most important part of discussing Cybersecurity and Privacy with the average layperson is discussing motivation. Many individuals have not considered these things, and often think of them being necessary for ``more important people'' or for ``people with something to hide.'' Clearly, this couldn't be further from the truth. Cybersecurity and Privacy are a for everyone.
+
+Of course, your average laypersosn won't see it this way. They will need some convincing. In this section we will define privacy, discuss a few common arguments against privacy that one will hear from laypeople, and discuss some common counter arguments that could be used. It is unlikely that these arguments will need to be used much, since most people attending a cryptoparty have chosen to be there. Nonetheless, it is better to be prepared to discuss these ideas than to be caught off-guard.
+
+\subsection{What is Privacy?}
+
+The most important thing to remember is that privacy is not just about secrecy. It is not either ``private to everyone, or not private at all.'' Instead, one definition of privacy is about consent and assent over one's own data. Privacy is violated when one's own data is shared without one's direct consent or assent. Unfortunately, beacuse of the design of the Internet, this happens automatically without informing the user. 
+
+Another definition of privacy involves contextual integrity. This theory of privacy, introduced in \cite{nissenbaumPrivacy} by Professor Helen Nissenbaum, claims that there are a few ways that privacy can be violated. First, if the information flows to a source that is not acceptable given the context, privacy is violated. Second, if the data that is shared is not appropriate given the context, privacy is violated. This attempts to define privacy in terms of social norms, and does not consider privacy in terms of consent or assent.
+
+In this document we will be assuming the definition of privacy that concerns consent or assent. Exploring tool use through the lens of contextual integrity can be left to later documents.
+
+\subsection{Common Arguments Against Privacy}
+\label{subsec:arguments}
+In this section we will discuss the common arguments that individuals use against privacy, usually as excuses for why they do not actively try to protect their privacy. We will then explore the assumptions on which these arguments rely, and counter them.
+
+\subsubsection{I have nothing to hide.}
+
+This is by far the most common argument that laypeople use against protecting their privacy. Laypeople claim that there is no need for them to protect their privacy, since they do not have anything that requires hiding. There are several assumptions that this argument relies upon, as detailed below:
+
+\begin{enumerate}
+\item \textbf{Privacy is about secrets.} \\
+The first assumption that individuals who make this argument make is that privacy and secrecy are the same. What they are essentially saying is that they have no secrets. Whether or not this is true (and it likely isn't), privacy is not about secrets, but about individual control over one's own data. When viewed from this lens, it becomes a lot more contextual, and people are more willing to discuss how they can keep certain data (such as medical data) out of the hands of companies that have nothing to do with medicine (such as Google).
+
+\item \textbf{Only indviduals who should be viewing my data are viewing it.} \\
+    When someone uses the ``nothing to hide'' argument, they have another one of two underlying assumptions. Either they believe that anyone should have access to their data, or that their data is currently only being viewed by individuals who should be viewing it. Usually, this assumption is built on top of a misunderstanding of how the data market works, and individuals assume that their data is in fewer hands than it actually is, and is being used only to perform the service they receive. One of the best ways to counter this argument is to demonstrated how Facebook tracks people across websites, even when the individual does not have a Facebook account \cite{facebooktracking}. Another good way is to inform the laypeerson of data aggrigators, or companies that buy data for the sole purpose of selling it to anyone with cash. One of the best examples of the issues with data aggrigation companies can be seen by the recent scandals with Cambridge Analytica.
+
+\item \textbf{Privacy is only for shady people or important people.} \\
+Implicit in the ``nothing to hide'' argument is the assumption that privacy is only for ``bad people'' or ``important people.'' Further, these individuals assume that they are not ``shady'' or ``important.'' Again, this assumption entirely misses the point of context. It is important for them to realize that privacy (control over one's data) is a human right, and therefore applies to all indviduals. A good way to get this point across is to show violations of one's privacy, and the effect it can have on their life. One example is how privacy violations can be used to pressure people into spending more money, such as demonstrated in \cite{targetpregnant}. To quote the article, ``[t]he value of this information was that Target could send coupons to the pregnant woman at an expensive and habit-forming period of her life.'' Another example is to show the creepy things that can be predicted based on a violation of privacy. According the same article, Target was able to predict that a teenage girl was pregnant before the family knew.
+\end{enumerate}
+
+\subsubsection{Privacy is dead anyway.}
+
+Another common assummption made by the slightly more informed layman is that privacy and security are pointless endeavors, since they are violated on such a routine basis. This viewpoint shows an understanding of how modern technology works (data collection, etc.) but underestimates the effectiveness of privacy tools and change of habits. This is usually the easiest view-point to address with education on tools and practices. The remainder of this document serves as a counter to this viewpoint.
+
+\subsubsection{It is better to not use privacy tools and blend in.}
+
+The last common argument we will discuss in this document is the argument that using privacy tools makes one look suspicious, and that not using privacy tools allows them to be so ``uninteresting'' that their data will never be reviewed. This assumes that they have no habits that can be mistaken as malicious, and it also assumes that humans are doing the inspection. These are flawed assumptions. Indeed, machines have the ability to process data much quicker than humans, so it is likely that data that is not protected is being reviewed, though not by human eyes. Additionally, in most cases the inspection is done by machine learning, which contains high error rates and misclassifies often. This means that benign actions, such as learning another language or exploring Free/Libre Open Source Software (FLOSS) can be enough to label someone as suspicious \cite{linuxNSA}.
