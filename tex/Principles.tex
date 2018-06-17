@@ -1,10 +1,21 @@
-In mainstream media, the term ``security'' is used in a very ambiguous and often misleading way. Because of this, most people do not have a good understanding of what security is, or how it is achieved. For this reason, we suggest that you cover the definition of security pretty early in any trainings tht you do. In this section we definie the traditional CIA of security, and add an additional A for ``authentication,'' which we believe is not covered by the three traditional security principles.  
+In mainstream media, the term ``security'' is used in a very ambiguous and often misleading way. Because of this, most people do not have a good understanding of what security is, or how it is achieved. For this reason, we suggest that you cover the definition of security pretty early in any training that you do. In this section we define the traditional CIA of security, and add an additional A for ``authentication,'' which we believe is not covered by the three traditional security principles.  
+
+Though these four principles capture a lot of security, they are not all encompassing. There is more to security than just securing information, such as security your computational resources. However, as far as the layman is concerned the most important thing to protect is the data itself, so these four principles should suffice.
 
 \subsection{Confidentiality}
-The first principle of CyberSecurity is Confidentility.
+
+The first fundamental principle of Cybersecurity is Confidentiality. Confidentiality deals with access to data, and is perhaps the most important principle when discussing privacy in particular. To keep data confidential is to make sure that it is only accessed by parties that are authorized to access it. Typically on systems this can be implemented as access control mechanisms like usernames, passwords, file permissions, etc. However, with data in transit it is a bit trickier. Usually, this is done through encryption. Either symmetric or asymmetric encryption can be used (see Section \ref{sec:Encryption}), but the logistic of providing access to authorized parties changes between symmetric and asymmetric encryption.
+
 \subsection{Integrity}
-Content has not been modified.
+
+The second fundamental principle of Cybersecurity is Integrity of data. Integrity has to do with determining the validity of data, and protecting valid data from modification or accidental damage. However, in practice it is often difficult or impossible to protect data from being modified, especially as it traverses machines or networks such as the Internet. Therefore, the integrity of data is often protected by detecting if data has been modified, and re-transmitting data if a modification has been detected. This is done using the cryptographically secure hash, which you may or may not want to cover depending on the level of your attendees. 
+
 \subsection{Availability}
-Content is accessible.
+
+The third fundamental principle of Cybersecurity is the Availability of data. Availability means that the data remains accessible for individuals who are authorized to view it. As of today no easy-to-use and effective solution has been agreed upon, but many decentralized solutions such as bit-torrent show that decentralization can be extremely helpful to solving the availability problem.
+
 \subsection{Authentication}
-You know who sent the content. Not always desirable.
+
+The fourth fundamental principle of Cybersecurity the Authentication of the data's origin. When viewing some data that has been transmitted to us, we often want to be able to determine who sent the data in order to determine if the data is trustworthy and/or accurate. Thus, authentication isn't about the data itself, but about its origin. Frequently authentication is achieved through shared secrets or through cryptographic signatures, which are discussed in \ref{sec:Encryption}. This principle was added by the authors of this document, and is not part of the typical Cybersecurity education. We believe adding Authentication into the discussion makes it easier for laypeople to understand the importance of SSL, and why man-in-the-middle attacks are dangerous.
+
+It is important to realize that this property is not always desired. For example, journalists do not always want to know the identity of their sources, nor do emergency responders want to know the identities of those who report crimes. More mundanely, if one wishes to preserve the privacy of a communication partner, authentication to a real-world identity may not be desirable. Instead, authenticating that all messages came from the same identity without trying to determine who that identity is seems more desirable. 
